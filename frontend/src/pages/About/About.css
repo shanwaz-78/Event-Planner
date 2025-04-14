@@ -1,0 +1,54 @@
+.section-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #444;
+  }
+  
+  .highlight {
+    color: #0D6EFE;
+    font-weight: 700;
+  }
+  
+  .section-description {
+    font-size: 1rem;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .event-card {
+    position: relative;
+    border: none;
+    text-align: center;
+    background: none;
+  }
+  
+  .event-card img {
+    border-radius: 10px;
+    max-width: 100%;
+  }
+  
+  .event-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #222;
+    margin-top: 10px;
+   
+  }
+ 
+  
+  .event-description {
+    font-size: 0.95rem;
+    color: #777;
+  }
+  
+  .underline {
+    position: absolute;
+    left: 50%;
+    bottom: -10%;
+    width: 3px;
+    height: 30px;
+    background: #0D6EFE;
+    margin: 8px auto;
+  }
+  

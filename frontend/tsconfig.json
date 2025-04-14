@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "esModuleInterop": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "allowJs": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "skipDefaultLibCheck": true,
+    "baseUrl": "./src",
+    "paths": {
+      "component/*": ["./component/*"]
+    },
+    "noImplicitAny": false
+  },
+  "include": ["src"],
+  "exclude": ["node_modules","src/dammyData.js"]
+}

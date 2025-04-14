@@ -1,0 +1,61 @@
+.App {
+    text-align: center;
+}
+
+/* Carousel Styles */
+.carousel-item {
+    height: 100vh;
+    /* Fixed height for carousel */
+}
+
+.carousel-image-container {
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures the image covers the container without distortion */
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Card Styles */
+.card-image-container {
+    height: 200px;
+    /* Fixed height for card images */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensures the image covers the container without distortion */
+}
+
+.hover {
+    transition: 0.10s all ease-in-out;
+}
+
+.hover:hover {
+    transform: translate(0, -1%);
+    /* transform: rotateZ(360deg); */
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 50px;
+}

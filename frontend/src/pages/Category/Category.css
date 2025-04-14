@@ -1,0 +1,99 @@
+.search-container {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    width: 60%;
+}
+
+.search-vend {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.search-vend input,
+.search-loca input {
+    width: 100%;
+    padding: 7px 10px 7px 40px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    outline: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    transition: outline 100ms ease-in-out, box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out
+}
+
+.search-vend span {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: gray;
+    pointer-events: none;
+}
+
+.search-loca span {
+    position: absolute;
+    color: gray;
+    margin-top: 0.6rem;
+    margin-left: 0.6rem;
+    pointer-events: none;
+}
+
+.main-container{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.397);
+  }
+  
+  .main-container img{
+    width: 250px;
+    height: 150px;
+    justify-self: flex-end; 
+    border: solid 2px whitesmoke;
+  }
+  .card-container p{
+    flex-grow: 1;
+    font-size: 0.8rem;
+  }
+  .card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+  }
+  .card-btn{
+    background-color: #212121;
+    color: whitesmoke;
+    font-weight: bold;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    border: solid 1px rgb(24, 21, 21);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.897);
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  .card-btn:hover{
+      background-color: #ffffff;
+      color: #000000;
+      font-weight: 400;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.411); 
+      transform: translateY(2px);
+  }
+
+@media (max-width: 768px) {
+    .search-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .main-container img{
+      width: 80%;
+      height: 70%;
+    }
+
+    .search-container input,
+    .search-container button {
+        min-width: 400px;
+        width: 100%;
+    }
+}

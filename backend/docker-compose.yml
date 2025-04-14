@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: event_planner_postgres
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: "1234"
+      POSTGRES_DB: event_planner_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+  
+#   node:
+#     depends_on:
+#       - postgres
+#     build: .
+#     container_name: event_planner_node
+#     working_dir: /app
+#     volumes:
+#       - .:/app
+#     ports:
+#       - "3000:3000"
+#     env_file:
+#       - .env
+
+volumes:
+  pg_data:
